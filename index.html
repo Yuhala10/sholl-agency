@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Sholl Agency Yiwu - Your Reliable Bridge Between China and the World. Visa services, buying & shipping, currency exchange, merchandise tracking."/>
+  <meta name="keywords" content="China sourcing agent, Yiwu agent, China visa, shipping from China, buy from China, Yiwu market"/>
+  <meta property="og:title" content="Sholl Agency Yiwu – China to the World"/>
+  <meta property="og:description" content="Trusted China sourcing, visa, shipping & currency exchange agent based in Yiwu."/>
+  <meta property="og:type" content="website"/>
+  <title>Sholl Agency Yiwu – Your Bridge Between China & the World</title>
+
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ PRELOADER ═══ -->
+<div id="preloader">
+  <div class="pre-inner">
+    <div class="pre-logo">SHOLL<span>AGENCY</span></div>
+    <div class="pre-bar"><div class="pre-fill"></div></div>
+    <div class="pre-text" id="preText">Loading...</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ CURSOR ═══ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ═══════════════════════════════════════ TOP BAR ═══ -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span><i class="fa-solid fa-location-dot"></i> Yiwu, China</span>
+      <span><i class="fa-solid fa-phone"></i> +86 195 6012 5426</span>
+    </div>
+    <div class="topbar-right">
+      <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLang('en')">EN</button>
+        <span>/</span>
+        <button class="lang-btn" onclick="setLang('fr')">FR</button>
+      </div>
+      <a href="https://wa.me/8619560125426" target="_blank" class="topbar-wa">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span data-en="Chat Now" data-fr="Discuter">Chat Now</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ NAVBAR ═══ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">
+      <div class="logo-icon"><i class="fa-solid fa-dragon"></i></div>
+      <div class="logo-text">SHOLL<span>AGENCY</span><small>YIWU</small></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" data-en="Home" data-fr="Accueil">Home</a></li>
+      <li><a href="#services" data-en="Services" data-fr="Services">Services</a></li>
+      <li><a href="#how" data-en="How It Works" data-fr="Comment ça marche">How It Works</a></li>
+      <li><a href="#testimonials" data-en="Testimonials" data-fr="Témoignages">Testimonials</a></li>
+      <li><a href="#gallery" data-en="Gallery" data-fr="Galerie">Gallery</a></li>
+      <li><a href="#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
+      <li><a href="#order" class="nav-order" data-en="Order Now" data-fr="Commander">Order Now</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════ HERO ═══ -->
+<section id="home" class="hero">
+  <div class="hero-bg">
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="skyline-silhouette"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge reveal-up">
+      <i class="fa-solid fa-map-pin"></i>
+      <span data-en="Based in Yiwu, China 📍" data-fr="Basé à Yiwu, Chine 📍">Based in Yiwu, China 📍</span>
+    </div>
+    <h1 class="hero-title reveal-up" style="animation-delay:.15s">
+      <span data-en="Your Reliable Bridge" data-fr="Votre Pont Fiable">Your Reliable Bridge</span><br>
+      <em data-en="Between China" data-fr="Entre la Chine">Between China</em>
+      <span class="hero-and" data-en="and the" data-fr="et le"> and the</span>
+      <span class="hero-world" data-en="World" data-fr="Monde">World</span>
+    </h1>
+    <p class="hero-sub reveal-up" style="animation-delay:.3s" data-en="Visas · Sourcing · Shipping · Currency · Tracking — handled with speed, discretion and full professionalism." data-fr="Visas · Sourcing · Expédition · Devises · Suivi — gérés avec rapidité, discrétion et professionnalisme.">
+      Visas · Sourcing · Shipping · Currency · Tracking — handled with speed, discretion and full professionalism.
+    </p>
+    <div class="trust-badges reveal-up" style="animation-delay:.45s">
+      <div class="badge"><i class="fa-solid fa-bolt"></i><span data-en="Fast" data-fr="Rapide">Fast</span></div>
+      <div class="badge"><i class="fa-solid fa-shield-halved"></i><span data-en="Reliable" data-fr="Fiable">Reliable</span></div>
+      <div class="badge"><i class="fa-solid fa-lock"></i><span data-en="Confidential" data-fr="Confidentiel">Confidential</span></div>
+      <div class="badge"><i class="fa-solid fa-handshake"></i><span data-en="Serious" data-fr="Sérieux">Serious</span></div>
+    </div>
+    <div class="hero-ctas reveal-up" style="animation-delay:.6s">
+      <a href="#order" class="btn-hero-primary magnetic">
+        <span data-en="Get a Free Quote" data-fr="Obtenir un Devis">Get a Free Quote</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <a href="https://wa.me/8619560125426" target="_blank" class="btn-hero-wa magnetic">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span data-en="WhatsApp Now" data-fr="WhatsApp Maintenant">WhatsApp Now</span>
+      </a>
+    </div>
+    <div class="hero-stats reveal-up" style="animation-delay:.75s">
+      <div class="hstat"><div class="hstat-num" data-target="8">0</div><div class="hstat-lbl" data-en="Years Active" data-fr="Ans d'activité">Years Active</div></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><div class="hstat-num" data-target="1200">0</div><div class="hstat-lbl" data-en="Clients Served" data-fr="Clients Servis">Clients Served</div></div>
+      <div class="hstat-div"></div>
+      <div class="hstat"><div class="hstat-num" data-target="32">0</div><div class="hstat-lbl" data-en="Countries Covered" data-fr="Pays Couverts">Countries Covered</div></div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span data-en="Scroll to explore" data-fr="Défiler pour explorer">Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ TRUST STRIP ═══ -->
+<div class="trust-strip">
+  <div class="strip-track">
+    <span><i class="fa-solid fa-check-circle"></i> <span data-en="8+ Years Experience" data-fr="8+ Ans d'expérience">8+ Years Experience</span></span>
+    <span><i class="fa-solid fa-check-circle"></i> <span data-en="1200+ Happy Clients" data-fr="1200+ Clients Satisfaits">1200+ Happy Clients</span></span>
+    <span><i class="fa-solid fa-check-circle"></i> <span data-en="32 Countries Served" data-fr="32 Pays Servis">32 Countries Served</span></span>
+    <span><i class="fa-solid fa-check-circle"></i> <span data-en="24/7 WhatsApp Support" data-fr="Support WhatsApp 24/7">24/7 WhatsApp Support</span></span>
+    <span><i class="fa-solid fa-check-circle"></i> <span data-en="Secure Payments" data-fr="Paiements Sécurisés">Secure Payments</span></span>
+    <span><i class="fa-solid fa-check-circle"></i> <span data-en="Money-Back Guarantee" data-fr="Garantie de Remboursement">Money-Back Guarantee</span></span>
+    <!-- duplicate for infinite loop -->
+    <span><i class="fa-solid fa-check-circle"></i> <span>8+ Years Experience</span></span>
+    <span><i class="fa-solid fa-check-circle"></i> <span>1200+ Happy Clients</span></span>
+    <span><i class="fa-solid fa-check-circle"></i> <span>32 Countries Served</span></span>
+    <span><i class="fa-solid fa-check-circle"></i> <span>24/7 WhatsApp Support</span></span>
+    <span><i class="fa-solid fa-check-circle"></i> <span>Secure Payments</span></span>
+    <span><i class="fa-solid fa-check-circle"></i> <span>Money-Back Guarantee</span></span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════ SERVICES ═══ -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <div class="section-tag" data-en="What We Do" data-fr="Ce Que Nous Faisons">What We Do</div>
+      <h2 data-en="Our Services" data-fr="Nos Services">Our Services</h2>
+      <p data-en="Everything you need to do business with China — under one trusted roof." data-fr="Tout ce dont vous avez besoin pour faire affaires avec la Chine — sous un toit de confiance.">Everything you need to do business with China — under one trusted roof.</p>
+    </div>
+
+    <!-- Section A: Visa -->
+    <div class="service-block reveal-up" id="srv-visa">
+      <div class="srv-header">
+        <div class="srv-icon"><i class="fa-solid fa-passport"></i></div>
+        <div>
+          <h3 data-en="China Travel Procedures" data-fr="Procédures de Voyage en Chine">China Travel Procedures</h3>
+          <p data-en="Full visa support from application to arrival" data-fr="Assistance visa complète de la demande à l'arrivée">Full visa support from application to arrival</p>
+        </div>
+      </div>
+      <div class="srv-cards">
+        <div class="srv-card magnetic">
+          <div class="srv-card-icon"><i class="fa-solid fa-plane"></i></div>
+          <h4 data-en="Tourism Visa" data-fr="Visa Tourisme">Tourism Visa</h4>
+          <p data-en="Explore China with full documentation support." data-fr="Explorez la Chine avec un soutien documentaire complet.">Explore China with full documentation support.</p>
+          <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20need%20a%20Tourism%20Visa%20to%20China." target="_blank" class="srv-btn" data-en="Request My Visa" data-fr="Demander Mon Visa">Request My Visa</a>
+        </div>
+        <div class="srv-card magnetic">
+          <div class="srv-card-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h4 data-en="Work Visa" data-fr="Visa de Travail">Work Visa</h4>
+          <p data-en="Work legally in China with our expert guidance." data-fr="Travaillez légalement en Chine avec notre expertise.">Work legally in China with our expert guidance.</p>
+          <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20need%20a%20Work%20Visa%20to%20China." target="_blank" class="srv-btn" data-en="Request My Visa" data-fr="Demander Mon Visa">Request My Visa</a>
+        </div>
+        <div class="srv-card magnetic">
+          <div class="srv-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h4 data-en="Study Visa" data-fr="Visa Étudiant">Study Visa</h4>
+          <p data-en="Study in Chinese universities — we handle the paperwork." data-fr="Étudiez dans des universités chinoises — nous gérons les documents.">Study in Chinese universities — we handle the paperwork.</p>
+          <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20need%20a%20Study%20Visa%20to%20China." target="_blank" class="srv-btn" data-en="Request My Visa" data-fr="Demander Mon Visa">Request My Visa</a>
+        </div>
+        <div class="srv-card magnetic">
+          <div class="srv-card-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h4 data-en="Business Visa" data-fr="Visa d'Affaires">Business Visa</h4>
+          <p data-en="Meet suppliers, attend trade fairs, close deals." data-fr="Rencontrez des fournisseurs, assistez à des foires commerciales.">Meet suppliers, attend trade fairs, close deals.</p>
+          <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20need%20a%20Business%20Visa%20to%20China." target="_blank" class="srv-btn" data-en="Request My Visa" data-fr="Demander Mon Visa">Request My Visa</a>
+        </div>
+        <div class="srv-card magnetic">
+          <div class="srv-card-icon"><i class="fa-solid fa-circle-check"></i></div>
+          <h4 data-en="Pre & Post Travel" data-fr="Avant et Après Voyage">Pre & Post Travel</h4>
+          <p data-en="Hotel bookings, itinerary planning, airport transfers." data-fr="Réservations d'hôtel, planification d'itinéraire, transferts.">Hotel bookings, itinerary planning, airport transfers.</p>
+          <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20need%20Pre%20Travel%20Assistance." target="_blank" class="srv-btn" data-en="Request My Visa" data-fr="Demander Mon Visa">Request My Visa</a>
+        </div>
+        <div class="srv-card magnetic">
+          <div class="srv-card-icon"><i class="fa-solid fa-person-walking-luggage"></i></div>
+          <h4 data-en="Arrival Support" data-fr="Accueil à l'Arrivée">Arrival Support</h4>
+          <p data-en="We welcome you personally at the airport in China." data-fr="Nous vous accueillons personnellement à l'aéroport en Chine.">We welcome you personally at the airport in China.</p>
+          <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20need%20Arrival%20Support%20in%20China." target="_blank" class="srv-btn" data-en="Request My Visa" data-fr="Demander Mon Visa">Request My Visa</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section B: Buying & Shipping -->
+    <div class="service-block reveal-up" id="srv-buy">
+      <div class="srv-header">
+        <div class="srv-icon" style="background:linear-gradient(135deg,#FFD700,#cc9900)"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div>
+          <h3 data-en="Buying & Shipping from China" data-fr="Achat & Expédition depuis la Chine">Buying & Shipping from China</h3>
+          <p data-en="We source, purchase and deliver any product from China to your door." data-fr="Nous sourcez, achetons et livrons tout produit de Chine à votre porte.">We source, purchase and deliver any product from China to your door.</p>
+        </div>
+      </div>
+      <div class="srv-cards">
+        <div class="srv-card magnetic">
+          <div class="srv-card-icon" style="color:#FFD700"><i class="fa-solid fa-car"></i></div>
+          <h4 data-en="Cars & Vehicles" data-fr="Voitures & Véhicules">Cars & Vehicles</h4>
+          <p data-en="New & used vehicles sourced directly from Chinese manufacturers." data-fr="Véhicules neufs et d'occasion directement des fabricants chinois.">New & used vehicles sourced directly from Chinese manufacturers.</p>
+          <div class="delivery-badge"><i class="fa-solid fa-clock"></i> <span data-en="45–90 days by sea" data-fr="45–90 jours par mer">45–90 days by sea</span></div>
+          <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20want%20to%20buy%20a%20Car%20from%20China." target="_blank" class="srv-btn gold" data-en="Get a Quote" data-fr="Obtenir un Devis">Get a Quote</a>
+        </div>
+        <div class="srv-card magnetic">
+          <div class="srv-card-icon" style="color:#FFD700"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h4 data-en="Electronics" data-fr="Électronique">Electronics</h4>
+          <p data-en="Phones, laptops, gadgets — authentic products at factory prices." data-fr="Téléphones, ordinateurs, gadgets — produits authentiques aux prix d'usine.">Phones, laptops, gadgets — authentic products at factory prices.</p>
+          <div class="delivery-badge"><i class="fa-solid fa-clock"></i> <span data-en="7–15 days by air" data-fr="7–15 jours par avion">7–15 days by air</span></div>
+          <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20want%20to%20buy%20Electronics%20from%20China." target="_blank" class="srv-btn gold" data-en="Get a Quote" data-fr="Obtenir un Devis">Get a Quote</a>
+        </div>
+        <div class="srv-card magnetic">
+          <div class="srv-card-icon" style="color:#FFD700"><i class="fa-solid fa-shirt"></i></div>
+          <h4 data-en="Clothes & Shoes" data-fr="Vêtements & Chaussures">Clothes & Shoes</h4>
+          <p data-en="All styles, all sizes — sourced from Yiwu's famous markets." data-fr="Tous les styles, toutes les tailles — sourcés des célèbres marchés de Yiwu.">All styles, all sizes — sourced from Yiwu's famous markets.</p>
+          <div class="delivery-badge"><i class="fa-solid fa-clock"></i> <span data-en="10–20 days by air" data-fr="10–20 jours par avion">10–20 days by air</span></div>
+          <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20want%20to%20buy%20Clothes%20from%20China." target="_blank" class="srv-btn gold" data-en="Get a Quote" data-fr="Obtenir un Devis">Get a Quote</a>
+        </div>
+        <div class="srv-card magnetic">
+          <div class="srv-card-icon" style="color:#FFD700"><i class="fa-solid fa-gear"></i></div>
+          <h4 data-en="Machines & Equipment" data-fr="Machines & Équipements">Machines & Equipment</h4>
+          <p data-en="Industrial machinery, tools and heavy equipment at best prices." data-fr="Machines industrielles, outils et équipements lourds aux meilleurs prix.">Industrial machinery, tools and heavy equipment at best prices.</p>
+          <div class="delivery-badge"><i class="fa-solid fa-clock"></i> <span data-en="30–60 days by sea" data-fr="30–60 jours par mer">30–60 days by sea</span></div>
+          <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20need%20Machines%20from%20China." target="_blank" class="srv-btn gold" data-en="Get a Quote" data-fr="Obtenir un Devis">Get a Quote</a>
+        </div>
+        <div class="srv-card magnetic">
+          <div class="srv-card-icon" style="color:#FFD700"><i class="fa-solid fa-plane-departure"></i></div>
+          <h4 data-en="Air Cargo" data-fr="Fret Aérien">Air Cargo</h4>
+          <p data-en="Fast, secure air freight for urgent or light shipments." data-fr="Fret aérien rapide et sécurisé pour envois urgents ou légers.">Fast, secure air freight for urgent or light shipments.</p>
+          <div class="delivery-badge"><i class="fa-solid fa-clock"></i> <span data-en="5–14 days" data-fr="5–14 jours">5–14 days</span></div>
+          <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20need%20Air%20Cargo%20from%20China." target="_blank" class="srv-btn gold" data-en="Get a Quote" data-fr="Obtenir un Devis">Get a Quote</a>
+        </div>
+        <div class="srv-card magnetic">
+          <div class="srv-card-icon" style="color:#FFD700"><i class="fa-solid fa-ship"></i></div>
+          <h4 data-en="Sea Cargo" data-fr="Fret Maritime">Sea Cargo</h4>
+          <p data-en="Economical sea shipping for bulk orders and large containers." data-fr="Expédition maritime économique pour commandes en gros et grands conteneurs.">Economical sea shipping for bulk orders and large containers.</p>
+          <div class="delivery-badge"><i class="fa-solid fa-clock"></i> <span data-en="30–60 days" data-fr="30–60 jours">30–60 days</span></div>
+          <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20need%20Sea%20Cargo%20from%20China." target="_blank" class="srv-btn gold" data-en="Get a Quote" data-fr="Obtenir un Devis">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section C: Currency Exchange -->
+    <div class="service-block reveal-up" id="srv-currency">
+      <div class="srv-header">
+        <div class="srv-icon" style="background:linear-gradient(135deg,#1a8c4e,#0d5c34)"><i class="fa-solid fa-coins"></i></div>
+        <div>
+          <h3 data-en="Currency Exchange" data-fr="Change de Devises">Currency Exchange</h3>
+          <p data-en="We help you exchange safely before or during your trip." data-fr="Nous vous aidons à changer en toute sécurité avant ou pendant votre voyage.">We help you exchange safely before or during your trip.</p>
+        </div>
+      </div>
+      <div class="currency-grid">
+        <div class="currency-card magnetic">
+          <div class="cc-icon"><i class="fa-solid fa-globe"></i></div>
+          <h4 data-en="All Currencies Accepted" data-fr="Toutes Devises Acceptées">All Currencies Accepted</h4>
+          <p data-en="CFA, USD, EUR, GBP, XAF and more — we handle them all with the best rates." data-fr="CFA, USD, EUR, GBP, XAF et plus — nous les gérons tous avec les meilleurs taux.">CFA, USD, EUR, GBP, XAF and more — we handle them all with the best rates.</p>
+        </div>
+        <div class="currency-card magnetic">
+          <div class="cc-icon"><i class="fa-solid fa-plane-up"></i></div>
+          <h4 data-en="Before Departure" data-fr="Avant le Départ">Before Departure</h4>
+          <p data-en="Exchange your money before arriving in China — avoid airport rip-offs." data-fr="Changez votre argent avant d'arriver en Chine — évitez les arnaques aéroport.">Exchange your money before arriving in China — avoid airport rip-offs.</p>
+        </div>
+        <div class="currency-card magnetic">
+          <div class="cc-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+          <h4 data-en="Already in China" data-fr="Déjà en Chine">Already in China</h4>
+          <p data-en="We assist you with safe local exchange points right here in Yiwu." data-fr="Nous vous aidons avec des points de change sûrs ici même à Yiwu.">We assist you with safe local exchange points right here in Yiwu.</p>
+        </div>
+      </div>
+      <div class="currency-cta">
+        <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20need%20currency%20exchange%20assistance." target="_blank" class="btn-primary magnetic">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span data-en="Ask About Rates" data-fr="Se Renseigner sur les Taux">Ask About Rates</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Section D: Tracking -->
+    <div class="service-block reveal-up" id="srv-tracking">
+      <div class="srv-header">
+        <div class="srv-icon" style="background:linear-gradient(135deg,#0077cc,#004f8c)"><i class="fa-solid fa-box-open"></i></div>
+        <div>
+          <h3 data-en="Merchandise Tracking" data-fr="Suivi de Marchandises">Merchandise Tracking</h3>
+          <p data-en="Real-time follow-up on all your packages — peace of mind guaranteed." data-fr="Suivi en temps réel de tous vos colis — tranquillité d'esprit garantie.">Real-time follow-up on all your packages — peace of mind guaranteed.</p>
+        </div>
+      </div>
+      <div class="tracking-area">
+        <div class="track-features">
+          <div class="track-feat"><i class="fa-solid fa-check"></i><span data-en="Packages bought through us" data-fr="Colis achetés par notre intermédiaire">Packages bought through us</span></div>
+          <div class="track-feat"><i class="fa-solid fa-check"></i><span data-en="Packages bought elsewhere" data-fr="Colis achetés ailleurs">Packages bought elsewhere</span></div>
+          <div class="track-feat"><i class="fa-solid fa-check"></i><span data-en="Regular WhatsApp updates" data-fr="Mises à jour régulières sur WhatsApp">Regular WhatsApp updates</span></div>
+        </div>
+        <div class="track-box">
+          <h4 data-en="Track Your Package" data-fr="Suivez Votre Colis">Track Your Package</h4>
+          <div class="track-input-row">
+            <input type="text" id="trackInput" placeholder="Enter tracking number..." data-placeholder-en="Enter tracking number..." data-placeholder-fr="Entrez le numéro de suivi..."/>
+            <button onclick="trackPackage()" class="track-btn magnetic">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <span data-en="Track" data-fr="Suivre">Track</span>
+            </button>
+          </div>
+          <p class="track-note" data-en="Or send your tracking number directly on WhatsApp for instant updates." data-fr="Ou envoyez votre numéro de suivi directement sur WhatsApp pour des mises à jour instantanées.">Or send your tracking number directly on WhatsApp for instant updates.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ HOW IT WORKS ═══ -->
+<section id="how" class="how-section">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <div class="section-tag" data-en="Our Process" data-fr="Notre Processus">Our Process</div>
+      <h2 data-en="How It Works" data-fr="Comment Ça Marche">How It Works</h2>
+      <p data-en="6 simple steps from first contact to delivery at your door." data-fr="6 étapes simples du premier contact à la livraison à votre porte.">6 simple steps from first contact to delivery at your door.</p>
+    </div>
+    <div class="steps-container">
+      <div class="steps-line"></div>
+      <div class="step-item reveal-up" style="animation-delay:.05s">
+        <div class="step-num">01</div>
+        <div class="step-icon"><i class="fa-brands fa-whatsapp"></i></div>
+        <div class="step-content">
+          <h4 data-en="Contact Us on WhatsApp" data-fr="Contactez-nous sur WhatsApp">Contact Us on WhatsApp</h4>
+          <p data-en="Reach out 24/7 — we respond fast, in French or English." data-fr="Contactez-nous 24h/24 — nous répondons rapidement, en français ou anglais.">Reach out 24/7 — we respond fast, in French or English.</p>
+        </div>
+      </div>
+      <div class="step-item reveal-up" style="animation-delay:.1s">
+        <div class="step-num">02</div>
+        <div class="step-icon"><i class="fa-solid fa-comments"></i></div>
+        <div class="step-content">
+          <h4 data-en="Tell Us What You Need" data-fr="Dites-nous ce dont vous avez besoin">Tell Us What You Need</h4>
+          <p data-en="Share details about your visa, products, or shipping needs." data-fr="Partagez les détails de votre visa, produits ou besoins d'expédition.">Share details about your visa, products, or shipping needs.</p>
+        </div>
+      </div>
+      <div class="step-item reveal-up" style="animation-delay:.15s">
+        <div class="step-num">03</div>
+        <div class="step-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+        <div class="step-content">
+          <h4 data-en="We Give You a Quote" data-fr="Nous Vous Donnons un Devis">We Give You a Quote</h4>
+          <p data-en="Receive a transparent, detailed quote — no hidden fees." data-fr="Recevez un devis transparent et détaillé — sans frais cachés.">Receive a transparent, detailed quote — no hidden fees.</p>
+        </div>
+      </div>
+      <div class="step-item reveal-up" style="animation-delay:.2s">
+        <div class="step-num">04</div>
+        <div class="step-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="step-content">
+          <h4 data-en="Confirm & Pay Deposit" data-fr="Confirmer & Payer l'Acompte">Confirm & Pay Deposit</h4>
+          <p data-en="Secure your order with a partial payment via safe channels." data-fr="Sécurisez votre commande avec un paiement partiel via des canaux sûrs.">Secure your order with a partial payment via safe channels.</p>
+        </div>
+      </div>
+      <div class="step-item reveal-up" style="animation-delay:.25s">
+        <div class="step-num">05</div>
+        <div class="step-icon"><i class="fa-solid fa-gears"></i></div>
+        <div class="step-content">
+          <h4 data-en="We Handle Everything" data-fr="Nous Gérons Tout">We Handle Everything</h4>
+          <p data-en="Sourcing, buying, customs, shipping — completely handled for you." data-fr="Sourcing, achat, douane, expédition — entièrement géré pour vous.">Sourcing, buying, customs, shipping — completely handled for you.</p>
+        </div>
+      </div>
+      <div class="step-item reveal-up" style="animation-delay:.3s">
+        <div class="step-num">06</div>
+        <div class="step-icon"><i class="fa-solid fa-box-open"></i></div>
+        <div class="step-content">
+          <h4 data-en="You Receive Your Order" data-fr="Vous Recevez Votre Commande">You Receive Your Order</h4>
+          <p data-en="Your goods arrive safely — tracked every step of the way." data-fr="Vos marchandises arrivent en toute sécurité — suivies à chaque étape.">Your goods arrive safely — tracked every step of the way.</p>
+        </div>
+      </div>
+    </div>
+    <div class="how-cta reveal-up">
+      <a href="https://wa.me/8619560125426?text=Hello%2C%20I%20want%20to%20start%20an%20order." target="_blank" class="btn-primary magnetic">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span data-en="Start My Order Now" data-fr="Commencer Ma Commande">Start My Order Now</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ TESTIMONIALS ═══ -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <div class="section-tag" data-en="Client Reviews" data-fr="Avis Clients">Client Reviews</div>
+      <h2 data-en="What Our Clients Say" data-fr="Ce Que Disent Nos Clients">What Our Clients Say</h2>
+      <p data-en="Real people, real results. Here's what they say after working with us." data-fr="De vraies personnes, de vrais résultats. Voici ce qu'ils disent après avoir travaillé avec nous.">Real people, real results. Here's what they say after working with us.</p>
+    </div>
+    <div class="countries-served reveal-up">
+      <span class="country-chip"><span class="flag">🇨🇲</span> Cameroon</span>
+      <span class="country-chip"><span class="flag">🇨🇬</span> Congo</span>
+      <span class="country-chip"><span class="flag">🇬🇦</span> Gabon</span>
+      <span class="country-chip"><span class="flag">🇿🇦</span> South Africa</span>
+      <span class="country-chip"><span class="flag">🇨🇮</span> Côte d'Ivoire</span>
+      <span class="country-chip"><span class="flag">🇸🇳</span> Senegal</span>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card reveal-up magnetic" style="animation-delay:.05s">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p data-en='"Sholl Agency helped me get my business visa in record time. The process was smooth and I was welcomed at Yiwu airport personally. I trust them 100%."' data-fr='"Sholl Agency m\'a aidé à obtenir mon visa d\'affaires en un temps record. Le processus était fluide et j\'ai été accueilli personnellement à l\'aéroport de Yiwu."'>"Sholl Agency helped me get my business visa in record time. The process was smooth and I was welcomed at Yiwu airport personally. I trust them 100%."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#CC0000">JM</div>
+          <div><strong>Jean-Marie K.</strong><br><span>🇨🇲 Cameroon</span></div>
+        </div>
+      </div>
+      <div class="testi-card reveal-up magnetic" style="animation-delay:.1s">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p data-en='"I ordered electronics worth $8,000 and everything arrived perfectly. Real tracking updates on WhatsApp every step. This team is genuinely professional."' data-fr='"J\'ai commandé pour 8 000$ d\'électronique et tout est arrivé parfaitement. Vraies mises à jour WhatsApp à chaque étape. Cette équipe est vraiment professionnelle."'>"I ordered electronics worth $8,000 and everything arrived perfectly. Real tracking updates on WhatsApp every step. This team is genuinely professional."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#FFD700;color:#000">SO</div>
+          <div><strong>Samuel O.</strong><br><span>🇿🇦 South Africa</span></div>
+        </div>
+      </div>
+      <div class="testi-card reveal-up magnetic" style="animation-delay:.15s">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p data-en='"Currency exchange was my biggest worry. They handled everything before I even left Libreville. Their rates were better than my bank. Highly recommend!"' data-fr='"Le change de devises était ma plus grande inquiétude. Ils ont tout géré avant même que je quitte Libreville. Leurs taux étaient meilleurs que ma banque."'>"Currency exchange was my biggest worry. They handled everything before I even left Libreville. Their rates were better than my bank. Highly recommend!"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#1a8c4e">AM</div>
+          <div><strong>Aimée M.</strong><br><span>🇬🇦 Gabon</span></div>
+        </div>
+      </div>
+      <div class="testi-card reveal-up magnetic" style="animation-delay:.2s">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p data-en='"I shipped 3 containers of goods for my shop. Sea cargo arrived on time, customs handled perfectly. These guys are the real deal for Africa-China trade."' data-fr='"J\'ai expédié 3 conteneurs de marchandises pour ma boutique. Le fret maritime est arrivé à temps, les douanes parfaitement gérées. Ces gars sont sérieux."'>"I shipped 3 containers of goods for my shop. Sea cargo arrived on time, customs handled perfectly. These guys are the real deal for Africa-China trade."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#0077cc">PB</div>
+          <div><strong>Patrick B.</strong><br><span>🇨🇬 Congo</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ GALLERY ═══ -->
+<section id="gallery" class="gallery-section">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <div class="section-tag" data-en="Proof of Work" data-fr="Preuves de Travail">Proof of Work</div>
+      <h2 data-en="Gallery & Proof" data-fr="Galerie & Preuves">Gallery & Proof</h2>
+      <p data-en="Real photos from our operations in China, Yiwu market and client shipments." data-fr="Vraies photos de nos opérations en Chine, au marché de Yiwu et des expéditions clients.">Real photos from our operations in China, Yiwu market and client shipments.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item reveal-up magnetic" style="animation-delay:.05s">
+       <img src="image/im1.jpeg" alt="Yiwu City">
+        <div class="gallery-overlay">
+          <span data-en="Shipping Operations" data-fr="Opérations d'Expédition">Shipping Operations</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal-up magnetic" style="animation-delay:.1s">
+       <img src="image/im2.jpeg" alt="Yiwu City">
+        <div class="gallery-overlay">
+          <span data-en="Yiwu Market" data-fr="Marché de Yiwu">Yiwu Market</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal-up magnetic" style="animation-delay:.15s">
+        <img src="image/im3.jpeg" alt="Yiwu City">
+        <div class="gallery-overlay">
+          <span data-en="Sea Cargo" data-fr="Fret Maritime">Sea Cargo</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal-up magnetic" style="animation-delay:.2s">
+        <img src="image/im4.jpeg" alt="Yiwu City">
+        <div class="gallery-overlay">
+          <span data-en="Client Chats" data-fr="Échanges Clients">Client Chats</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal-up magnetic" style="animation-delay:.25s">
+        <div class="gallery-placeholder gp5">
+          <i class="fa-solid fa-people-group"></i>
+          <span data-en="Our Team in China" data-fr="Notre Équipe en Chine">Our Team in China</span>
+        </div>
+        <div class="gallery-overlay">
+          <span data-en="The Team" data-fr="L'Équipe">The Team</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal-up magnetic" style="animation-delay:.3s">
+        <div class="gallery-placeholder gp6">
+          <i class="fa-solid fa-city"></i>
+          <span data-en="Yiwu City, China" data-fr="Yiwu, Chine">Yiwu City, China</span>
+        </div>
+        <div class="gallery-overlay">
+          <span>Yiwu, China</span>
+        </div>
+      </div>
+    </div>
+    <p class="gallery-note reveal-up" data-en="📸 Add your real photos by replacing the gallery placeholders with &lt;img&gt; tags." data-fr="📸 Ajoutez vos vraies photos en remplaçant les espaces réservés par des balises &lt;img&gt;.">📸 Add your real photos by replacing the gallery placeholders with &lt;img&gt; tags.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ ORDER FORM ═══ -->
+<section id="order" class="order-section">
+  <div class="container">
+    <div class="order-split">
+      <div class="order-left reveal-left">
+        <div class="section-tag" data-en="Start Today" data-fr="Commencez Aujourd'hui">Start Today</div>
+        <h2 data-en="Request a Quote" data-fr="Demander un Devis">Request a Quote</h2>
+        <p data-en="Fill in the form and we'll reply on WhatsApp within 30 minutes." data-fr="Remplissez le formulaire et nous vous répondrons sur WhatsApp dans les 30 minutes.">Fill in the form and we'll reply on WhatsApp within 30 minutes.</p>
+        <div class="order-trust">
+          <div class="ot-item"><i class="fa-solid fa-clock"></i><span data-en="Response in 30 min" data-fr="Réponse en 30 min">Response in 30 min</span></div>
+          <div class="ot-item"><i class="fa-solid fa-lock"></i><span data-en="100% Confidential" data-fr="100% Confidentiel">100% Confidential</span></div>
+          <div class="ot-item"><i class="fa-solid fa-shield-halved"></i><span data-en="No obligations" data-fr="Sans engagement">No obligations</span></div>
+          <div class="ot-item"><i class="fa-brands fa-whatsapp"></i><span data-en="WhatsApp reply" data-fr="Réponse WhatsApp">WhatsApp reply</span></div>
+        </div>
+      </div>
+      <div class="order-right reveal-right">
+        <form class="order-form" id="orderForm" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label data-en="Full Name *" data-fr="Nom Complet *">Full Name *</label>
+              <input type="text" id="fname" required data-placeholder-en="Your full name" data-placeholder-fr="Votre nom complet" placeholder="Your full name"/>
+            </div>
+            <div class="form-group">
+              <label data-en="Country *" data-fr="Pays *">Country *</label>
+              <input type="text" id="country" required data-placeholder-en="Your country" data-placeholder-fr="Votre pays" placeholder="Your country"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label data-en="WhatsApp Number *" data-fr="Numéro WhatsApp *">WhatsApp Number *</label>
+              <input type="tel" id="waNum" required data-placeholder-en="+1 234 567 8900" data-placeholder-fr="+1 234 567 8900" placeholder="+1 234 567 8900"/>
+            </div>
+            <div class="form-group">
+              <label data-en="Email" data-fr="Email">Email</label>
+              <input type="email" id="email" data-placeholder-en="your@email.com" data-placeholder-fr="votre@email.com" placeholder="your@email.com"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label data-en="Service Needed *" data-fr="Service Requis *">Service Needed *</label>
+            <select id="service" required>
+              <option value="" data-en="-- Select a service --" data-fr="-- Sélectionner un service --">-- Select a service --</option>
+              <option value="Tourism Visa" data-en="Tourism Visa" data-fr="Visa Tourisme">Tourism Visa</option>
+              <option value="Work Visa" data-en="Work Visa" data-fr="Visa de Travail">Work Visa</option>
+              <option value="Study Visa" data-en="Study Visa" data-fr="Visa Étudiant">Study Visa</option>
+              <option value="Business Visa" data-en="Business Visa" data-fr="Visa d'Affaires">Business Visa</option>
+              <option value="Buying & Shipping" data-en="Buying & Shipping from China" data-fr="Achat & Expédition depuis la Chine">Buying & Shipping from China</option>
+              <option value="Air Cargo" data-en="Air Cargo" data-fr="Fret Aérien">Air Cargo</option>
+              <option value="Sea Cargo" data-en="Sea Cargo" data-fr="Fret Maritime">Sea Cargo</option>
+              <option value="Currency Exchange" data-en="Currency Exchange" data-fr="Change de Devises">Currency Exchange</option>
+              <option value="Merchandise Tracking" data-en="Merchandise Tracking" data-fr="Suivi de Marchandises">Merchandise Tracking</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-en="Details of Request *" data-fr="Détails de la Demande *">Details of Request *</label>
+            <textarea id="details" rows="4" required data-placeholder-en="Describe what you need in detail..." data-placeholder-fr="Décrivez ce dont vous avez besoin en détail..." placeholder="Describe what you need in detail..."></textarea>
+          </div>
+          <div class="form-group">
+            <label data-en="Budget (optional)" data-fr="Budget (optionnel)">Budget (optional)</label>
+            <input type="text" id="budget" data-placeholder-en="e.g. $500 or 300,000 CFA" data-placeholder-fr="ex. 500$ ou 300 000 CFA" placeholder="e.g. $500 or 300,000 CFA"/>
+          </div>
+          <button type="submit" class="btn-submit magnetic">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span data-en="Send My Request" data-fr="Envoyer Ma Demande">Send My Request</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ CONTACT ═══ -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="section-head reveal-up">
+      <div class="section-tag" data-en="Get in Touch" data-fr="Nous Contacter">Get in Touch</div>
+      <h2 data-en="Contact Us" data-fr="Contactez-Nous">Contact Us</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card reveal-up magnetic">
+        <div class="contact-icon wa"><i class="fa-brands fa-whatsapp"></i></div>
+        <h4>WhatsApp</h4>
+        <p>+86 195 6012 5426</p>
+        <a href="https://wa.me/8619560125426" target="_blank" class="contact-link" data-en="Open WhatsApp" data-fr="Ouvrir WhatsApp">Open WhatsApp</a>
+      </div>
+      <div class="contact-card reveal-up magnetic" style="animation-delay:.1s">
+        <div class="contact-icon phone"><i class="fa-solid fa-phone"></i></div>
+        <h4 data-en="Phone" data-fr="Téléphone">Phone</h4>
+        <p>+86 195 6012 5426</p>
+        <a href="tel:+8619560125426" class="contact-link" data-en="Call Now" data-fr="Appeler Maintenant">Call Now</a>
+      </div>
+      <div class="contact-card reveal-up magnetic" style="animation-delay:.2s">
+        <div class="contact-icon loc"><i class="fa-solid fa-location-dot"></i></div>
+        <h4 data-en="Location" data-fr="Localisation">Location</h4>
+        <p data-en="Yiwu, Zhejiang Province, China" data-fr="Yiwu, Province du Zhejiang, Chine">Yiwu, Zhejiang Province, China</p>
+        <a href="https://maps.google.com/?q=Yiwu+China" target="_blank" class="contact-link" data-en="View on Map" data-fr="Voir sur la Carte">View on Map</a>
+      </div>
+      <div class="contact-card reveal-up magnetic" style="animation-delay:.3s">
+        <div class="contact-icon time"><i class="fa-solid fa-clock"></i></div>
+        <h4 data-en="Availability" data-fr="Disponibilité">Availability</h4>
+        <p data-en="24/7 — We never close" data-fr="24h/24 — Nous ne fermons jamais">24/7 — We never close</p>
+        <a href="https://wa.me/8619560125426" target="_blank" class="contact-link" data-en="Message Anytime" data-fr="Écrire à tout moment">Message Anytime</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">SHOLL<span>AGENCY</span><small>YIWU</small></div>
+        <p data-en="Your reliable bridge between China and the world. Based in Yiwu, serving Africa and beyond." data-fr="Votre pont fiable entre la Chine et le monde. Basé à Yiwu, au service de l'Afrique et au-delà.">Your reliable bridge between China and the world. Based in Yiwu, serving Africa and beyond.</p>
+        <div class="footer-badges">
+          <span>✅ <span data-en="Trusted" data-fr="Fiable">Trusted</span></span>
+          <span>🔒 <span data-en="Secure" data-fr="Sécurisé">Secure</span></span>
+          <span>⚡ <span data-en="Fast" data-fr="Rapide">Fast</span></span>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="Services" data-fr="Services">Services</h5>
+        <ul>
+          <li><a href="#services" data-en="China Visa" data-fr="Visa Chine">China Visa</a></li>
+          <li><a href="#services" data-en="Buying & Shipping" data-fr="Achat & Expédition">Buying & Shipping</a></li>
+          <li><a href="#services" data-en="Currency Exchange" data-fr="Change de Devises">Currency Exchange</a></li>
+          <li><a href="#services" data-en="Package Tracking" data-fr="Suivi de Colis">Package Tracking</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="Quick Links" data-fr="Liens Rapides">Quick Links</h5>
+        <ul>
+          <li><a href="#home" data-en="Home" data-fr="Accueil">Home</a></li>
+          <li><a href="#how" data-en="How It Works" data-fr="Comment ça marche">How It Works</a></li>
+          <li><a href="#testimonials" data-en="Testimonials" data-fr="Témoignages">Testimonials</a></li>
+          <li><a href="#order" data-en="Order Now" data-fr="Commander">Order Now</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5 data-en="Contact" data-fr="Contact">Contact</h5>
+        <ul>
+          <li><a href="https://wa.me/8619560125426" target="_blank"><i class="fa-brands fa-whatsapp"></i> +86 195 6012 5426</a></li>
+          <li><a href="#"><i class="fa-solid fa-location-dot"></i> Yiwu, China</a></li>
+          <li><a href="#"><i class="fa-solid fa-clock"></i> <span data-en="24/7 Available" data-fr="Disponible 24/7">24/7 Available</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-en="© 2025 Sholl Agency Yiwu. All rights reserved." data-fr="© 2025 Sholl Agency Yiwu. Tous droits réservés.">© 2025 Sholl Agency Yiwu. All rights reserved.</p>
+      <p data-en="🌐 shollagencyyiwu.vercel.app" data-fr="🌐 shollagencyyiwu.vercel.app">🌐 shollagencyyiwu.vercel.app</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══════════════════════════════════════ FLOATING WA ═══ -->
+<a href="https://wa.me/8619560125426?text=Hello%2C%20I%27m%20interested%20in%20your%20services." target="_blank" class="floating-wa" id="floatingWa">
+  <div class="wa-pulse"></div>
+  <i class="fa-brands fa-whatsapp"></i>
+  <span class="wa-tooltip" data-en="Chat with us!" data-fr="Discutez avec nous!">Chat with us!</span>
+</a>
+
+<!-- Back to top -->
+<button class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
